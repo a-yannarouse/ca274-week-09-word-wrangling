@@ -31,5 +31,5 @@ This pipeline consists of five jobs, one to "test" each task.  These five jobs m
 You can see the pipeline outcome under `Build`/`Pipelines` on the left-hand side of the
 project page for your fork on GitLab.
 
-Note that: because the initial version of this repo does not contain the required
-scripts, each of the five pipeline jobs will fail until you have completed the relevant task.
+Because the initial version of this repo does not contain the required
+scripts, each of the five pipeline jobs will fail until you have successfully completed the relevant task.
