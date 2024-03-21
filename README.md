@@ -25,7 +25,7 @@ This week, work uploaded to *Einstein* is **not considered to be submitted**.
 You will submit your work by committing it to your project fork and pushing those
 changes back to GitLab.  The main branch for this project is `main`.
 
-When you push changes back to GitLab, a [https://docs.gitlab.com/ee/ci/](GitLab CI pipeline) runs.
+When you push changes back to GitLab, a (GitLab CI pipeline)[https://docs.gitlab.com/ee/ci/] runs.
 This pipeline consists of five jobs, one to "test" each task.  These five jobs must pass.
 
 You can see the pipeline outcome under `Build`/`Pipelines` on the left-hand side of the
