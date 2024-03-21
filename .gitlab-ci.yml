@@ -1,0 +1,45 @@
+# triple-a-words.bash
+# two-letter-endings.bash
+# missing-two-letter-endings.bash
+# bigrams.bash
+# reversible.bash
+
+triple-a-words.bash:
+  variables:
+    task: "triple-a-words.bash"
+  script:
+    - bash "$task" < ./.words.txt | tail
+    - bash "$task" < ./.words.txt | sha256sum
+    - bash "$task" < ./.words.txt | sha256sum | grep -q 0abd68b31f674672ac45b8f2e1abac259f4e78bc933860901268320aeaf554a1
+
+two-letter-endings.bash:
+  variables:
+    task: "two-letter-endings.bash"
+  script:
+    - bash "$task" < ./.words.txt | tail
+    - bash "$task" < ./.words.txt | sha256sum
+    - bash "$task" < ./.words.txt | sha256sum | grep -q 7a954338e5368e8705218429729e06e79e78de39e0929874d8a36bc68f761b1e
+
+missing-two-letter-endings.bash:
+  variables:
+    task: "missing-two-letter-endings.bash"
+  script:
+    - bash "$task" < ./.words.txt | tail
+    - bash "$task" < ./.words.txt | sha256sum
+    - bash "$task" < ./.words.txt | sha256sum | grep -q df39c12d96bc04043c59130e4e782574d7c561ccbb35fc4d09d5b6bf2fa95a4a
+
+bigrams.bash:
+  variables:
+    task: "bigrams.bash"
+  script:
+    - bash "$task" < ./.words.txt | tail
+    - bash "$task" < ./.words.txt | sha256sum
+    - bash "$task" < ./.words.txt | sha256sum | grep -q bc2f84ce93a30710a7f2dd0e7cde63ac17aeab893461bcc6e6d1d35a3d153346
+
+reversible.bash:
+  variables:
+    task: "reversible.bash"
+  script:
+    - bash "$task" < ./.words.txt | tail
+    - bash "$task" < ./.words.txt | sha256sum
+    - bash "$task" < ./.words.txt | sha256sum | grep -q 86053cee79b25289e2509c7ea3f6f0fa0ca71fc3326bda9c1811c3468e5fbcb7
